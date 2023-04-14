@@ -1,1 +1,1 @@
-module.exports = require('./packages/prettier-config/index');
+module.exports = require('./src/prettier/index');

@@ -1,16 +1,43 @@
 {
-    "name": "eslint-prettier-config",
+    "name": "@jejebecarte/eslint-config",
     "version": "1.0.0",
-    "description": "Comprehensive ESLint and Prettier configuration for Javascript and Typescript projects, including React support.",
+    "description": "Comprehensive Prettier and ESLint configuration for Javascript and Typescript projects, including React support.",
     "license": "LGPL-3.0-or-later",
     "author": "Jejebecarte",
-    "private": true,
-    "workspaces": [
-        "packages/*"
+    "main": "src/index.js",
+    "exports": {
+        ".": "./src/index.js",
+        "./eslint": "./src/eslint/index.js",
+        "./prettier": "./src/prettier/index.js",
+        "./prettier-small-tab-width": "./src/prettier/small-tab-width.js"
+    },
+    "keywords": [
+        "eslint",
+        "prettier",
+        "javascript",
+        "typescript"
     ],
+    "homepage": "https://github.com/Jejebecarte/eslint-config#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jejebecarte/eslint-config.git"
+    },
     "scripts": {
-        "publish:eslint": "npm publish --workspace @jejebecarte/eslint-config",
-        "publish:prettier": "npm publish --workspace @jejebecarte/prettier-config",
         "lint": "eslint . --ext js,jsx,ts,tsx --fix"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.58.0",
+        "@typescript-eslint/parser": "^5.58.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8.38.0",
+        "prettier": "^2.8.7"
     }
 }
