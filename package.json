@@ -1,15 +1,16 @@
 {
-  "name": "eslint-prettier-config",
-  "version": "1.0.0",
-  "description": "ESLint and Prettier configuration for Javascript and Typescript projects, including React support.",
-  "license": "LGPL-3.0-or-later",
-  "author": "Jejebecarte",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "publish:eslint": "npm publish --workspace @jejebecarte/eslint-config",
-    "publish:prettier": "npm publish --workspace @jejebecarte/prettier-config"
-  }
+    "name": "eslint-prettier-config",
+    "version": "1.0.0",
+    "description": "Comprehensive ESLint and Prettier configuration for Javascript and Typescript projects, including React support.",
+    "license": "LGPL-3.0-or-later",
+    "author": "Jejebecarte",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "publish:eslint": "npm publish --workspace @jejebecarte/eslint-config",
+        "publish:prettier": "npm publish --workspace @jejebecarte/prettier-config",
+        "lint": "eslint . --ext js,jsx,ts,tsx --fix"
+    }
 }

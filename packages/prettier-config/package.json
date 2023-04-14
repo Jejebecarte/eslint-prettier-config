@@ -1,25 +1,26 @@
 {
-  "name": "@jejebecarte/prettier-config",
-  "version": "1.0.0",
-  "description": "ESLint and Prettier configuration for Javascript and Typescript projects, including React support.",
-  "license": "LGPL-3.0-or-later",
-  "author": "Jejebecarte",
-  "main": "default.js",
-  "exports": {
-    ".": "./default.js",
-    "./half-width": "./half-width.js"
-  },
-  "keywords": [
-    "prettier",
-    "typescript"
-  ],
-  "homepage": "https://github.com/Jejebecarte/eslint-prettier-config#readme",
-  "repository": {
-    "url": "https://github.com/Jejebecarte/eslint-prettier-config.git",
-    "type": "git",
-    "directory": "packages/prettier-config"
-  },
-  "peerDependencies": {
-    "prettier": "^2.8.7"
-  }
+    "name": "@jejebecarte/prettier-config",
+    "version": "1.0.0",
+    "description": "Prettier configuration for Javascript and Typescript projects.",
+    "license": "LGPL-3.0-or-later",
+    "author": "Jejebecarte",
+    "main": "index.js",
+    "exports": {
+        ".": "./index.js",
+        "./small-tab-width": "./small-tab-width.js"
+    },
+    "keywords": [
+        "prettier",
+        "javascript",
+        "typescript"
+    ],
+    "homepage": "https://github.com/Jejebecarte/eslint-prettier-config#readme",
+    "repository": {
+        "url": "https://github.com/Jejebecarte/eslint-prettier-config.git",
+        "type": "git",
+        "directory": "packages/prettier-config"
+    },
+    "peerDependencies": {
+        "prettier": "^2.8.7"
+    }
 }
