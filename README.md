@@ -38,7 +38,11 @@ $ yarn add -D @jejebecarte/eslint-config eslint prettier
 
 ### ESLint
 
-**// TODO**
+Create a `.eslintrc.js` file in the root directory of your project and add the following content:
+
+```js
+module.exports = require('@jejebecarte/eslint-config');
+```
 
 ### Prettier
 
