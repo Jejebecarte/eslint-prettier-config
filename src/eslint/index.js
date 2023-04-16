@@ -9,33 +9,38 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
+    rules: {
+        'no-bitwise': 'off',
+        'no-continue': 'off',
+    },
     overrides: [
         /**
          * Typescript
          */
         {
-            files: ['**/*.{ts,tsx}'],
-            extends: ['airbnb-typescript'],
+            files: '**/*.{ts,tsx}',
+            extends: 'airbnb-typescript',
             parserOptions: {
-                ecmaFeatures: {
-                    jsx: true,
-                },
                 project: 'tsconfig.json',
+            },
+            rules: {
+                '@typescript-eslint/comma-dangle': 'off',
+                '@typescript-eslint/indent': 'off',
             },
         },
         /**
          * React
          */
         {
-            files: ['**/*.{jsx,tsx}'],
-            extends: ['airbnb', 'airbnb/hooks'],
+            files: '**/*.{jsx,tsx}',
+            extends: ['plugin:react/recommended', 'airbnb/hooks'],
             parser: '@typescript-eslint/parser',
         },
         /**
          * Testing library
          */
         {
-            files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
+            files: '**/?(*.)+(spec|test).[jt]s?(x)',
             extends: ['plugin:testing-library/react'],
             parser: '@typescript-eslint/parser',
         },

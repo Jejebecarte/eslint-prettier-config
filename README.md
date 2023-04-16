@@ -41,7 +41,19 @@ $ yarn add -D @jejebecarte/eslint-config eslint prettier
 Create a `.eslintrc.js` file in the root directory of your project and add the following content:
 
 ```js
-module.exports = require('@jejebecarte/eslint-config');
+module.exports = {
+    extends: '@jejebecarte',
+};
+```
+
+If you have other shared configurations in the `extends` key, put this last so `eslint-config-prettier` is able to override rules that conflict with Prettier.
+
+You may also want to add script to your `package.json` in order to quickly fix lint errors in your code:
+
+```json
+"scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+}
 ```
 
 ### Prettier
