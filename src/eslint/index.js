@@ -38,6 +38,7 @@ module.exports = {
             parser: '@typescript-eslint/parser',
             rules: {
                 'class-methods-use-this': 'off',
+                'react/prop-types': 'off',
             },
         },
         /**
