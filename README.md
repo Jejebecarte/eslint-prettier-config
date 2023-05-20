@@ -14,7 +14,7 @@
 Comprehensive ESLint and Prettier configuration for Javascript and Typescript projects, including React support.
 
 > **Note**
-> These configurations were designed to be used together, however you may use them individually. In this case, some ESLint rules may be disabled due to `eslint-config-prettier`, but can be overriden.
+> These configurations were designed to be used together, however you may use them individually. In this case, some ESLint rules may be disabled due to `eslint-config-prettier`, but this behaviour can be overridden.
 
 -   [Installation](#installation)
 -   [Usage](#usage)
@@ -67,7 +67,7 @@ module.exports = require('@jejebecarte/eslint-config/prettier');
 Alternatively, you may use the smaller `tabWidth` version:
 
 ```js
-module.exports = require('@jejebecarte/eslint-config/prettier-small-tab-width');
+module.exports = require('@jejebecarte/eslint-config/prettier-stw');
 ```
 
 ## License

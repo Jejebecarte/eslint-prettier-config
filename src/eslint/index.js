@@ -12,6 +12,7 @@ module.exports = {
     rules: {
         'no-bitwise': 'off',
         'no-continue': 'off',
+        'no-underscore-dangle': 'off',
     },
     overrides: [
         /**
@@ -35,6 +36,9 @@ module.exports = {
             files: '**/*.{jsx,tsx}',
             extends: ['plugin:react/recommended', 'airbnb/hooks'],
             parser: '@typescript-eslint/parser',
+            rules: {
+                'class-methods-use-this': 'off',
+            },
         },
         /**
          * Testing library

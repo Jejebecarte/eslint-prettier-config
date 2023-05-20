@@ -1,6 +1,6 @@
 {
     "name": "@jejebecarte/eslint-config",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Comprehensive Prettier and ESLint configuration for Javascript and Typescript projects, including React support.",
     "license": "LGPL-3.0-or-later",
     "author": "Jejebecarte",
@@ -8,7 +8,7 @@
     "exports": {
         ".": "./src/eslint/index.js",
         "./prettier": "./src/prettier/index.js",
-        "./prettier-small-tab-width": "./src/prettier/small-tab-width.js"
+        "./prettier-stw": "./src/prettier/small-tab-width.js"
     },
     "keywords": [
         "eslint",
