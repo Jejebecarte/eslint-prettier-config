@@ -12,6 +12,7 @@ module.exports = {
     rules: {
         'no-bitwise': 'off',
         'no-continue': 'off',
+        'no-plusplus': 'off',
         'no-underscore-dangle': 'off',
     },
     overrides: [
