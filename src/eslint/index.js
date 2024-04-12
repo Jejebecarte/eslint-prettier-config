@@ -4,6 +4,7 @@ module.exports = {
         es2022: true,
         node: true,
     },
+    ignorePatterns: 'dist/',
     extends: ['eslint:recommended', 'plugin:import/recommended', 'airbnb-base', 'prettier'],
     parserOptions: {
         ecmaVersion: 'latest',
@@ -12,6 +13,7 @@ module.exports = {
     rules: {
         'no-bitwise': 'off',
         'no-continue': 'off',
+        'no-param-reassign': ['error', { props: false }],
         'no-plusplus': 'off',
         'no-underscore-dangle': 'off',
     },
@@ -28,6 +30,15 @@ module.exports = {
             rules: {
                 '@typescript-eslint/comma-dangle': 'off',
                 '@typescript-eslint/indent': 'off',
+                '@typescript-eslint/lines-between-class-members': [
+                    'error',
+                    {
+                        enforce: [
+                            { blankLine: 'always', prev: 'field', next: 'method' },
+                            { blankLine: 'always', prev: 'method', next: 'method' },
+                        ],
+                    },
+                ],
             },
         },
         /**
