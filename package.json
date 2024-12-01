@@ -1,9 +1,9 @@
 {
     "name": "@jejebecarte/eslint-config",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "Comprehensive Prettier and ESLint configuration for Javascript and Typescript projects, including React support.",
     "license": "LGPL-3.0-or-later",
-    "author": "Jejebecarte",
+    "author": "jejebecarte",
     "main": "src/eslint/index.js",
     "exports": {
         ".": "./src/eslint/index.js",
@@ -17,10 +17,10 @@
         "typescript",
         "config"
     ],
-    "homepage": "https://github.com/Jejebecarte/eslint-config#readme",
+    "homepage": "https://github.com/jejebecarte/eslint-config#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Jejebecarte/eslint-config.git"
+        "url": "https://github.com/jejebecarte/eslint-config.git"
     },
     "scripts": {
         "lint": "eslint . --ext js,jsx,ts,tsx --fix"

@@ -13,7 +13,7 @@
 
 Comprehensive ESLint and Prettier configuration for Javascript and Typescript projects, including React support.
 
-> **Note**
+> [!NOTE]
 > These configurations were designed to be used together, however you may use them individually. In this case, some ESLint rules may be disabled due to `eslint-config-prettier`, but this behaviour can be overridden.
 
 -   [Installation](#installation)
